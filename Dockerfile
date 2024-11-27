@@ -1,5 +1,5 @@
 # Use ARM64-compatible Node 14 base image
-FROM arm64v8/node:14
+FROM arm64v8/node:16
 
 # Set environment variables
 ENV YARN_VERSION=1.19.1
