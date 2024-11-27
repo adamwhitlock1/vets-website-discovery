@@ -1,5 +1,5 @@
 # Use ARM64-compatible Node 14 base image
-FROM arm64v8/node:16
+FROM arm64v8/node:14
 
 # Set environment variables
 ENV YARN_VERSION=1.19.1
@@ -19,7 +19,7 @@ WORKDIR /application
 COPY package*.json yarn*.lock ./
 
 # Install dependencies
-RUN yarn install
+RUN yarn install --ignore-engines
 
 # Copy the rest of the application
 COPY . .
