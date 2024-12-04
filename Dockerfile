@@ -5,9 +5,6 @@ FROM node:14.15.5-alpine3.13
 ENV YARN_VERSION=1.19.1
 ENV NODE_ENV=development
 
-# Install Yarn
-RUN npm install -g yarn
-
 # Create and set working directory
 WORKDIR /application
 
