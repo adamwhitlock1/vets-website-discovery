@@ -1,14 +1,6 @@
 # base node image
 FROM node:14.15.5-alpine3.13
 
-# Install build dependencies
-RUN apt-get update && apt-get install -y \
-    python3 \
-    make \
-    g++ \
-    libxml2-dev \
-    && rm -rf /var/lib/apt/lists/*
-
 # Set environment variables
 ENV YARN_VERSION=1.19.1
 ENV NODE_ENV=development
