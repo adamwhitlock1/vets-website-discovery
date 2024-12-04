@@ -8,6 +8,9 @@ ENV NODE_ENV=development
 # Create and set working directory
 WORKDIR /application
 
+# Install git
+RUN apk add --no-cache git
+
 # Copy package.json and yarn.lock (if they exist)
 COPY package*.json yarn*.lock ./
 
