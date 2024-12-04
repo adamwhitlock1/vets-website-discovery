@@ -1,5 +1,5 @@
-# Use ARM64-compatible Node 14 base image
-FROM arm64v8/node:14
+# base node image
+FROM node:14.15.5-alpine3.13
 
 # Install build dependencies
 RUN apt-get update && apt-get install -y \
