@@ -8,6 +8,8 @@ ENV NODE_ENV=development
 # Create and set working directory
 WORKDIR /application
 
+# Copy the application code
+COPY . .
 # Install git
 RUN apk add --no-cache git
 
